@@ -1,0 +1,90 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
+const resources = {
+  En: {
+    translation: {
+      title: 'Welcome!',
+      title1: 'Create an Account',
+      Firstname: 'First Name*',
+      Lastname: 'Last Name*',
+      emailPlaceholder: 'Email*',
+      passwordPlaceholder: 'Password*',
+      CpasswordPlaceholder: 'Confirm Password*',
+      Mnumber:'Mobile Number*',
+      Number1:'+966',
+      Number2:'+877',
+      Number3:'+788',
+      loginButtonText: 'Login',
+      CreateButtonText: 'Create an Account',
+      ForgetpasswordText: 'Forget Password ?',
+      Discription:'By Creating a Watani account, I agree to the Terms of Use, and Privacy Notice.',
+      Newuser: 'New User ?',
+      Register: 'Register Now',
+      Show: 'Show',
+      Hide: 'Hide',
+      About:'About Us',
+      Tconditon:'Terms and Condition',
+      Privacy: 'Privacy Policy',
+      Help: 'Help',
+      Careers: 'Careers',
+      Cpolicy: 'Cancellation Policy',
+      Emailcontent:"Email is used for communication purpose",
+      PasswordTitlle:"Password must have",
+      LengthValid:"8 to 15 characters,",
+      UppercaseValid:"1 Uppercase(A-Z),",
+      LowercaseValid:"1 lower case(a-z),",
+      NumberValid:"1 number (0-9) and ",
+      SpecialCharValid:"1 special characterlike @,$,%, and &.",
+    },
+  },
+  
+  آر: {
+    translation: {
+      title: 'أهلاً وسهلاً!',
+      title1: 'إنشاء حساب',
+      Firstname: 'الاسم الأول*',
+      Lastname: 'اسم العائلة*',
+      emailPlaceholder: 'بريد إلكتروني*',
+      passwordPlaceholder: 'كلمة المرور*',
+      CpasswordPlaceholder: 'تأكيد كلمة المرور*',
+      Number1:'تسعة مائة وستة وستون+',
+      Number2:'ثمانية مائة وسبعة وسبعو+',
+      Number3:'سبعة مائة وثمانية وثمانون+',
+      Mnumber:'رقم الهاتف المحمول*',
+      loginButtonText: 'تسجيل الدخول',
+      CreateButtonText: 'إنشاء حساب',
+      ForgetpasswordText: 'نسيت كلمة المرور ?',
+      Discription:'بإنشاء حساب وطني، فإنني أوافق على شروط الاستخدام وإشعار الخصوصية',
+      Newuser: 'مستخدم جديد ?',
+      Register: 'سجل الان',
+      Show: 'يعرض',
+      Hide: 'يخفي',
+      About:'معلومات عنا',
+      Tconditon:'أحكام وشروط',
+      Privacy: 'سياسة الخصوصية',
+      Help: 'يساعد',
+      Careers: 'وظائف',
+      Cpolicy: 'سياسة الإلغاء',
+      Emailcontent:"يستخدم البريد الإلكتروني لغرض التواصل",
+      PasswordTitlle:"يجب أن يكون لديك كلمة المرور",
+      LengthValid:"من 8 إلى 15 حرفًا،",
+      UppercaseValid:"1 حرف كبير (من A إلى Z)،",
+      LowercaseValid:"1 حالة صغيرة (من a إلى z)،",
+      NumberValid:"1 رقم (0-9) و",
+      SpecialCharValid:"1 حرف خاص مثل @ و$ و% و&.",
+
+    },
+  },
+};
+
+i18n.use(initReactI18next).init({
+  resources,
+  lng: 'En',
+  fallbackLng: 'En',
+  interpolation: {
+    escapeValue: false,
+  },
+});
+
+export default i18n;
